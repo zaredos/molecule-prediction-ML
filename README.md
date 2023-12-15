@@ -222,9 +222,9 @@ return z
 
 ## Feature Engineering for Graph Datasets Process Overview
 1. Combining Datasets: All datasets are combined into a single list named datasets for streamlined processing.
-1. Iterating Over Each Graph:
+2. Iterating Over Each Graph:
 - The code iterates through each dataset in datasets, and then through each graph within these datasets.
-1. Molecular Descriptor Calculation:
+3. Molecular Descriptor Calculation:
 - For every graph, the corresponding molecular structure is retrieved using Chem.MolFromSmiles.
 - A series of molecular descriptors are computed for each molecule. These descriptors include:
   - FpDensityMorgan1,FpDensityMorgan2,FpDensityMorgan3: Morgan fingerprint densities.
@@ -239,7 +239,7 @@ return z
   - BalabanJ:BalabanJvalue.
   - MolLogP:Octanol-waterpartitioncoefficient.
   - PEOE_VSA6,SlogP_VSA2,SMR_VSA7:VariousVSAdescriptors.
-1. Tensor Conversion and Assignment:
+4. Tensor Conversion and Assignment:
 - The computed descriptors are converted into a PyTorch tensor with torch.float32 data type.
 - These new features are then assigned to the descriptors attribute of each graph for later use in models.
   
