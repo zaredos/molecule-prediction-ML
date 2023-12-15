@@ -10,35 +10,35 @@ descriptor_list = [desc.FpDensityMorgan1,
                   desc.FpDensityMorgan2,
                   desc.FpDensityMorgan3,
                   desc.BalabanJ,
-                 desc.BertzCT,
-                 desc.Ipc,
-                 desc.Kappa1,
-                 desc.Kappa2,
-                 desc.Kappa3,
-                 desc.MolWt,
-                 desc.MolLogP,
-                 desc.NumRotatableBonds,
-                 desc.NumHAcceptors,
-                 desc.NumHDonors,de
-                 desc.NumHeteroatoms,
-                 desc.NumValenceElectrons,
-                 desc.MolMR,
-                 desc.NumRadicalElectrons,
-                 desc.RingCount,
-                 desc.NumAromaticRings,
-                 desc.NumAliphaticRings,
-                 desc.NumSaturatedRings,
-                 desc.NumAromaticHeterocycles,
-                 desc.NumAromaticCarbocycles,
-                 desc.NumSaturatedHeterocycles,
-                 desc.NumSaturatedCarbocycles,
-                 desc.NumAliphaticHeterocycles,
-                 desc.NumAliphaticCarbocycles,
-                 desc.NOCount,
-                 desc.NHOHCount,
-                 desc.FractionCSP3,
-                 desc.LabuteASA,
-                 desc.TPSA,
+                  desc.BertzCT,
+                  desc.Ipc,
+                  desc.Kappa1,
+                  desc.Kappa2,
+                  desc.Kappa3,
+                  desc.MolWt,
+                  desc.MolLogP,
+                  desc.NumRotatableBonds,
+                  desc.NumHAcceptors,
+                  desc.NumHDonors,de
+                  desc.NumHeteroatoms,
+                  desc.NumValenceElectrons,
+                  desc.MolMR,
+                  desc.NumRadicalElectrons,
+                  desc.RingCount,
+                  desc.NumAromaticRings,
+                  desc.NumAliphaticRings,
+                  desc.NumSaturatedRings,
+                  desc.NumAromaticHeterocycles,
+                  desc.NumAromaticCarbocycles,
+                  desc.NumSaturatedHeterocycles,
+                  desc.NumSaturatedCarbocycles,
+                  desc.NumAliphaticHeterocycles,
+                  desc.NumAliphaticCarbocycles,
+                  desc.NOCount,
+                  desc.NHOHCount,
+                  desc.FractionCSP3,
+                  desc.LabuteASA,
+                  desc.TPSA,
 ]
 ```
 
@@ -242,7 +242,7 @@ return z
 1. Tensor Conversion and Assignment:
 - The computed descriptors are converted into a PyTorch tensor with torch.float32 data type.
 - These new features are then assigned to the descriptors attribute of each graph for later use in models.
-- 
+  
 ## Model init Model creation
 
 Here we created a Hybrid Model with 32 hidden channels, the number of node features, 12 output classes, and the number of non-graph features.
